@@ -4,6 +4,9 @@ Generates secure password's with a variety of options.
 
 ## TODO
 
-* Use input boxes vs alert's and prompt's
+* fix horizontal and vertical overflow in css
+* ~~Use the result text box for the result~~
+* add checkboxes to define password options
 * allow a custom word or phrase to be inserted
 * create copy to clipboard button
+* fix some of the footer being cut off in mobile view

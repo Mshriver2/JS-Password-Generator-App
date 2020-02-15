@@ -4,11 +4,11 @@ document.getElementById("submit").onclick = function() {genPassword()};
 
 //password generation function
 function genPassword() {
-    var pass_length = prompt("Enter a password length below between 8 and 128.");
-    var number_char = prompt("Use Numbers? Y or N?");
-    var special_char = prompt("Special Characters? Y or N?");
-    var upper_char = prompt("Use uppercase Characters? Y or N?");
-    var lower_char = prompt("Lowercase Characters? Y or N?");
+    var pass_length = document.getElementById("pass_length").value;
+    var number_char = document.getElementById("use_numbers");
+    var special_char = document.getElementById("use_specials");
+    var upper_char = document.getElementById("use_uppers");
+    var lower_char = document.getElementById("use_lowers");
 
 
     //sets char variables depending on the users response
@@ -16,35 +16,40 @@ function genPassword() {
             prompt("Please enter a valid length!");
     }  else {
 
-        if(number_char == "y" || number_char == "Y"){
+        if(number_char.checked){
             var chars1 = "1234567890";
+            console.log('if_else ran!');
         }
 
-        if(special_char == "y" || special_char == "Y"){
+        if(special_char.checked){
             var chars2 = "!@#$%^&*";
+            console.log('if_else ran!');
         }
 
-        if(upper_char == "y" || upper_char == "Y"){
+        if(upper_char.checked){
             var chars3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            console.log('if_else ran!');
         }
 
-        if(lower_char == "y" || lower_char == "Y"){
+        if(lower_char.checked){
             var chars4 = "abcdefghijklmnopqrstuvwxyz";
+            console.log('if_else ran!');
         }
 
-        if(number_char == "n" || number_char == "N"){
+        if(!number_char.checked){
             var chars1 = "";
+            console.log('if_else ran!');
         }
 
-        if(special_char == "n" || special_char == "N"){
+        if(!special_char.checked){
             var chars2 = "";
         }
 
-        if(upper_char == "n" || upper_char == "N"){
+        if(!upper_char.checked){
             chars3 = "";
         }
 
-        if(lower_char == "n" || lower_char == "N"){
+        if(!lower_char.checked){
             chars4 = "";
         }
 

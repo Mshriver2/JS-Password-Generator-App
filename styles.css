@@ -25,6 +25,16 @@ input[type=text] {
     color: #424242;
 }
 
+.label_checkbox {
+    color: black;
+    font-size: 18px;
+}
+
+
+input[type=checkbox]{
+
+}
+
 .footer {
 
         width: 100%;

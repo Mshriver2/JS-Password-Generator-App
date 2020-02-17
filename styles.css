@@ -15,6 +15,8 @@ html, body{
 
 .centered-form{
   margin-top: 30px;
+  font-size: 22px;
+  color: #424242;
 }
 
 input[type=text] {
@@ -25,14 +27,16 @@ input[type=text] {
     color: #424242;
 }
 
-.label_checkbox {
-    color: black;
-    font-size: 18px;
+.checkbox_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-
-input[type=checkbox]{
-
+.checkbox_container .label_checkbox{
+    font-size: 18px;
+    color: black;
 }
 
 .footer {

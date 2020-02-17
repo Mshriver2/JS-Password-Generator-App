@@ -21,14 +21,16 @@
     <form method="" action="">
             <h2>Password Box:</h2>
             <input type="text" id="pass_length" name="pass_length_box" placeholder="Enter a password length" class="form-control">
-            <input type="checkbox" name="use_numbers" id="use_numbers">
-            <label for="use_numbers" class="label_checkbox"> Use numbers?</label><br>
-            <input type="checkbox" name="use_specials" id="use_specials">
-            <label for="use_specials" class="label_checkbox"> Use special characters?</label><br>
-            <input type="checkbox" name="use_uppers" id="use_uppers">
-            <label for="use_uppers" class="label_checkbox"> Use uppercase letters?</label><br>
-            <input type="checkbox" name="use_lowers" id="use_lowers">
-            <label for="use_lowers" class="label_checkbox"> Use lowercase letters?</label><br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="use_numbers" id="use_numbers">
+                <label for="use_numbers" class="label_checkbox"> Use numbers?</label><br>
+                <input type="checkbox" name="use_specials" id="use_specials">
+                <label for="use_specials" class="label_checkbox"> Use special characters?</label><br>
+                <input type="checkbox" name="use_uppers" id="use_uppers">
+                <label for="use_uppers" class="label_checkbox"> Use uppercase letters?</label><br>
+                <input type="checkbox" name="use_lowers" id="use_lowers">
+                <label for="use_lowers" class="label_checkbox"> Use lowercase letters?</label><br>
+            </div>
             <input type="text" id="myresult" name="resultBox" class="form-control"><br>
             <input name="submit" type="button" id="submit" value="Generate" class="btn btn-info btn-block">
     </form>
